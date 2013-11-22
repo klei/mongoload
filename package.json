@@ -1,0 +1,28 @@
+{
+  "name": "mongoload",
+  "version": "0.1.0",
+  "description": "A small and simple Mongoose model loader/initiator",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec tests/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klei-dev/mongoload.git"
+  },
+  "keywords": [
+    "mongoose",
+    "models",
+    "loader"
+  ],
+  "author": "Joakim Bengtson <joakim@klei.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klei-dev/mongoload/issues"
+  },
+  "homepage": "https://github.com/klei-dev/mongoload",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0"
+  }
+}
