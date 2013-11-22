@@ -1,4 +1,4 @@
 
 module.exports = exports = function (mongoose, name) {
-  mongoose.loaded('AnotherModel');
+  mongoose.loaded('AnotherModel', name);
 };
