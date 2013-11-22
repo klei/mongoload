@@ -9,4 +9,20 @@ describe('mongoload', function () {
       done();
     });
   });
+
+  it('should require and initialize all models from file pattern', function (done) {
+    var called = 0;
+    var mongoose = {
+      loaded: function () {
+        if (++called === 2) {
+          done();
+        }
+      }
+    };
+    require('../.')
+      .bind(mongoose)
+      .load({
+        pattern: __dirname + '/testmodels/*.js'
+      });
+  });
 });
